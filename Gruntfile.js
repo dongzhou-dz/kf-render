@@ -1,4 +1,7 @@
 /*global module:false*/
+/**
+ * render Gruntfile
+ */
 module.exports = function (grunt) {
 
     grunt.initConfig({
@@ -28,8 +31,8 @@ module.exports = function (grunt) {
                     footer: '})();'
 
                 },
-
-                dest: 'dist/' + getFileName(),
+                dest: '../kf-editor/dev-render' + getFileName(),
+                // dest: 'dist/' + getFileName(),
                 src: [ '.tmp_build/kf.tmp.js', 'dev-lib/exports.js' ]
 
             }
