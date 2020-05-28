@@ -31,7 +31,7 @@ module.exports = function (grunt) {
                     footer: '})();'
 
                 },
-                dest: '../kf-editor/dev-render' + getFileName(),
+                dest: '../kf-editor/dev-render/' + getFileName(),
                 // dest: 'dist/' + getFileName(),
                 src: [ '.tmp_build/kf.tmp.js', 'dev-lib/exports.js' ]
 
@@ -94,7 +94,7 @@ module.exports = function (grunt) {
                 ignores: [ 'src/base/canvg.js' ],
                 jshintrc: '.jshintrc'
             },
-            source: [ 'src/**/*.js' ]
+            source: 'src/**/*.js'
         },
 
         // 临时目录清理
