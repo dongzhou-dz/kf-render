@@ -8,6 +8,9 @@
         "name": "Baidu Kity Group",
         "url": "http://ueditor.baidu.com"
     },
+    "scripts": {
+        "build": "grunt build --force"
+    },
     "repository": {
         "type": "git",
         "url": "https://github.com/kitygraph/formula.git"
